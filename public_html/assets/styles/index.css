@@ -1,1 +1,75 @@
-/* Empty CSS-file */
+:root {
+    --bs-body-color: #FFF8B6;
+    --bs-body-bg: #20655F;
+    --bs-primary: #20655F;
+    --bs-primary-bg: #FFF8B6;
+    --bs-primary-bg-subtle: #F8AA27;
+    --bs-secondary-color: #20655F;
+    --bs-secondary-color-subtle: #F8AA27;
+    --bs-secondary-bg: #F8AA27;
+    --bs-tertiary-color: #20655F;
+    --bs-tertiary-bg: #FAC55B;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: #FFF8B6;
+    border-bottom: 1rem solid var(--bs-secondary-bg)
+}
+.navbar{
+    padding: 0;
+}
+.navbar-brand {
+    color: #20655F;
+    padding: 0;
+    font-size: 5rem;
+}
+.nav-item {
+    font-size: 2rem;
+    padding: 0;
+}
+.nav-link {
+    padding: 0;
+    padding-top: 0.5rem;
+    line-height: 1;
+}
+.logo-be {
+    weight: 400;
+}
+.bs-secondary-color-subtle {
+    color: var(--bs-secondary-color-subtle);
+}
+.secondary-article, .tertiary-article {
+    padding: 4rem;
+}
+.secondary-article p, .tertiary-article p {
+    text-align: justify;
+}
+.secondary-article {
+    background-color: var(--bs-secondary-bg);
+}
+.secondary-article p, h1 {
+    color: var(--bs-secondary-color);
+}
+.tertiary-article {
+    background-color: var(--bs-tertiary-bg);
+}
+.tertiary-article p, h1 {
+    color: var(--bs-secondary-color);
+}
+.color-petrol {
+    color: #20655F;
+}
+.logo-bold {
+    font-weight: 800;
+}
+.logo-light {
+    font-weight: 100;
+}
+.banner {
+    font-size: 8rem;
+    text-shadow: 0.125rem 0.125rem 0.5rem #000;
+}
