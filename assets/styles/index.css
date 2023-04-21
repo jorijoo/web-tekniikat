@@ -1,20 +1,29 @@
+/* 
+ * COLOR VARIABLE AND BASIC SETTINGS
+ */
 :root {
+    /* Bootstrap colors extended with special colors, using same markup */
     --bs-body-color: #FFF8B6;
     --bs-body-bg: #20655F;
     --bs-primary: #20655F;
     --bs-primary-bg: #FFF8B6;
-    --bs-primary-bg-subtle: #F8AA27;
+    --bs-primary-bg-subtle: #F8AA27; /* Local */
     --bs-secondary-color: #20655F;
     --bs-secondary-color-subtle: #F8AA27;
     --bs-secondary-bg: #F8AA27;
     --bs-tertiary-color: #20655F;
     --bs-tertiary-bg: #FAC55B;
+    /* Local variables */
 }
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/*
+ * NAVIGATION
+ */
 nav {
     background-color: #FFF8B6;
     border-bottom: 1rem solid var(--bs-secondary-bg)
@@ -36,16 +45,36 @@ nav {
     padding-top: 0.5rem;
     line-height: 1;
 }
+
+/*
+ * TEXT-LOGO STYLES
+ */
+.banner {
+    font-size: 8rem;
+    text-shadow: 0.125rem 0.125rem 0.5rem #000;
+}
 .logo-be {
     weight: 400;
 }
-.bs-secondary-color-subtle {
-    color: var(--bs-secondary-color-subtle);
+.logo-bold {
+    font-weight: 800;
 }
-.secondary-article, .tertiary-article {
+.logo-light {
+    font-weight: 100;
+}
+
+/*
+ * TEXT AREA STYLES
+ */
+
+.primary-article,
+.secondary-article, 
+.tertiary-article {
     padding: 4rem;
 }
-.secondary-article p, .tertiary-article p {
+.primary-article p,
+.secondary-article p, 
+.tertiary-article p {
     text-align: justify;
 }
 .secondary-article {
@@ -53,6 +82,9 @@ nav {
 }
 .secondary-article p, h1 {
     color: var(--bs-secondary-color);
+}
+.bs-secondary-color-subtle {
+    color: var(--bs-secondary-color-subtle);
 }
 .tertiary-article {
     background-color: var(--bs-tertiary-bg);
@@ -62,14 +94,4 @@ nav {
 }
 .color-petrol {
     color: #20655F;
-}
-.logo-bold {
-    font-weight: 800;
-}
-.logo-light {
-    font-weight: 100;
-}
-.banner {
-    font-size: 8rem;
-    text-shadow: 0.125rem 0.125rem 0.5rem #000;
 }

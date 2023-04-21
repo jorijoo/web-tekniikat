@@ -1,2 +1,2 @@
-git-repo-harjoitukset/
-web-tekniikat-harjoitukset/
+# ignore all .files and folders
+.*
