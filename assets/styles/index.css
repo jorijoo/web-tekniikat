@@ -15,8 +15,8 @@
     --bs-tertiary-color: #20655F;
     --bs-tertiary-bg: #FAC55B;
     /* Local variables */
-    --local-banner-py: 12vh;
-    --local-article-px: 15vw;
+    --local-banner-py: 5vh;
+    --local-article-px: 5vw;
     --local-article-py: 2rem;
     --local-headline-align: center;
     --local-headline-size: 3rem;
@@ -47,7 +47,6 @@ body {
 
     /* Boorstrap sm-breakpoint */
     :root {
-        /* --local-headline-size: 8vw; */
     }
 }
 
@@ -144,10 +143,7 @@ h1 {
 
 article,
 .article {
-    padding-left: var(--local-article-px);
-    padding-right: var(--local-article-px);
-    padding-top: var(--local-article-py);
-    padding-bottom: var(--local-article-py);
+    padding: var(--local-article-py) var(--local-article-px);
     color: var(--bs-primary);
 }
 
@@ -188,9 +184,18 @@ article,
 .tertiary-article {
     background-color: var(--bs-tertiary-bg);
 }
-
-.color-petrol {
-    color: #20655F;
+#secrets {
+    font-size: var(--local-article-font-size);
+}
+#secrets > article:nth-child(2n) {
+    background-color: var(--bs-tertiary-bg);
+}
+#secrets > article p {
+    font-weight: var(--local-font-bold);
+    text-align: right;
+}
+#secrets > article > div > span:nth-child(3) {
+    font-weight: var(--local-font-bold);
 }
 
 /*
@@ -272,3 +277,10 @@ article,
         left: 3px;
         top: 3px;
     }
+
+/*
+ * SECRET LOG
+ */
+#secret-log > div {
+    background-color: var(--bs-primary-bg-subtle);
+}
