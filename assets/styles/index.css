@@ -90,6 +90,13 @@ nav {
     border-bottom: 1rem solid var(--bs-secondary-bg)
 }
 
+.nav-link,
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus, {
+    color: var(--bs-primary);
+}
+
 .navbar {
     padding: 0;
     padding-top: 10px;
