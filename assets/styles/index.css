@@ -1,4 +1,6 @@
-/* 
+/* Jori Hiltunen */
+
+/*
  * COLOR VARIABLE AND BASIC SETTINGS
  */
 :root {
@@ -41,13 +43,12 @@ body {
 }
 
 /*
- * Local responsiveness
+ * LOCAL RESPONSIVENESS
  */
 @media only screen and (min-width: 576px) {
 
     /* Boorstrap sm-breakpoint */
-    :root {
-    }
+    :root {}
 }
 
 @media only screen and (min-width: 768px) {
@@ -126,7 +127,6 @@ nav {
     padding-top: var(--local-banner-py);
     padding-bottom: var(--local-banner-py);
     font-size: 8rem;
-    /* text-shadow: 0.125rem 0.125rem 0.5rem #000; */
 }
 
 .logo-be {
@@ -191,22 +191,27 @@ article,
 .tertiary-article {
     background-color: var(--bs-tertiary-bg);
 }
+
 #secrets {
     font-size: var(--local-article-font-size);
 }
-#secrets > article:nth-child(2n) {
+
+#secrets>article:nth-child(2n) {
     background-color: var(--bs-tertiary-bg);
 }
-#secrets > article p {
+
+#secrets>article p {
     font-weight: var(--local-font-bold);
     text-align: right;
 }
-#secrets > article > div > span:nth-child(3) {
+
+#secrets>article>div>span:nth-child(3) {
     text-transform: uppercase;
     font-weight: var(--local-font-bold);
 }
-#secrets > article > div > span:nth-child(3)::after {
-    content:'_';
+
+#secrets>article>div>span:nth-child(3)::after {
+    content: '_';
 }
 
 /*
@@ -235,69 +240,98 @@ article,
     font-weight: var(--local-font-bold);
 }
 
+#tell-secret textarea {
+    line-height: 1;
+}
+
 /* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
-    /* Hide the browser's default checkbox */
-    .custom-checkbox .custom-label {
-        margin-right: 22px;
-    }
+/* Hide the browser's default checkbox */
+.custom-checkbox .custom-label {
+    margin-right: 22px;
+}
 
-    .custom-checkbox input {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 0;
-        width: 0;
-    }
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
 
-    /* Create a custom checkbox */
-    .checkmark {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        height: 22px;
-        width: 22px;
-        background-color: var(--bs-body-bg);
-    }
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 22px;
+    width: 22px;
+    background-color: var(--bs-body-bg);
+}
 
-    /* On mouse-over, add a grey background color */
-    .custom-checkbox:hover input~.checkmark {
-        background-color: var(--bs-body-bg);
-    }
+/* On mouse-over, add a grey background color */
+.custom-checkbox:hover input~.checkmark {
+    background-color: var(--bs-body-bg);
+}
 
-    /* When the checkbox is checked, add a blue background */
-    .custom-checkbox input:checked~.checkmark {
-        background-color: var(--bs-body-bg);
-    }
+/* When the checkbox is checked, add a blue background */
+.custom-checkbox input:checked~.checkmark {
+    background-color: var(--bs-body-bg);
+}
 
-    /* Create the checkmark/indicator (hidden when not checked) */
-    .checkmark:after {
-        content: "X";
-        font-size: 1.5rem;
-        position: absolute;
-        display: none;
-        color: var(--bs-body-color);
-    }
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "X";
+    font-size: 1.5rem;
+    position: absolute;
+    display: none;
+    color: var(--bs-body-color);
+}
 
-    /* Show the checkmark when checked */
-    .custom-checkbox input:checked~.checkmark:after {
-        display: block;
-    }
+/* Show the checkmark when checked */
+.custom-checkbox input:checked~.checkmark:after {
+    display: block;
+}
 
-    /* Style the checkmark/indicator */
-    .custom-checkbox .checkmark:after {
-        left: 3px;
-        top: 3px;
-    }
+/* Style the checkmark/indicator */
+.custom-checkbox .checkmark:after {
+    left: 3px;
+    top: 3px;
+}
+
+/*
+ * ACCORDION
+ */
+.accordion {
+    font-size: 1.4rem;
+    --bs-accordion-color: var(--bs-primary);
+    --bs-accordion-bg: var(--bs-primary-bg);
+    --bs-accordion-btn-color: var(--bs-accordion-color);
+    --bs-accordion-active-bg: var(--bs-tertiary-bg);
+    --bs-accordion-border-width: 0;
+    --bs-accordion-body-padding-y: 2.5rem;
+    --bs-accordion-body-padding-x: 6rem;
+    text-align: var(--local-article-align);
+}
+
+.accordion-button {
+    font-size: var(--local-headline2-size);
+    text-transform: uppercase;
+}
 
 /*
  * SECRET LOG
  */
-#secret-log > div {
+#secret-log>div {
     background-color: var(--bs-primary-bg-subtle);
 }
+
 .important-secret {
-    border-top: solid 5px var(--bs-body-color);
+    border-top: solid 1rem var(--bs-body-color);
     background-color: var(--bs-primary-bg-subtle) !important;
     font-weight: var(--local-font-bold);
     text-transform: uppercase;
+}
+
+.important-secret>div:first-child {
+    border-bottom: solid 2px var(--bs-primary);
 }

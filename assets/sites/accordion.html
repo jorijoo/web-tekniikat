@@ -1,55 +1,158 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Simple HTML page</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,500,700,900">
-        <link rel="stylesheet" href="/assets/styles/index.css">
-    </head>
-    <body>
-        <nav>
-            <p>Loading navigation component...</p>
-        </nav>
-        <div class="container-xl">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      Accordion Item #1
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simple HTML page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,500,700,900">
+    <link rel="stylesheet" href="/assets/styles/index.css">
+</head>
+
+<body>
+    <nav>
+        <p>Loading navigation component...</p>
+    </nav>
+    <div class="container-xl">
+        <!-- Bootstrap accordion items: https://getbootstrap.com/docs/5.0/components/accordion/ -->
+        <div class="row accordion accordion-flush" id="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <span class="bs-secondary-color-subtle">ACCORDION/</span><span class="color-petrol">ITEM_</span>
                     </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                  </div>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique, eaque
+                            perferendis odio quae itaque explicabo quasi facere ratione modi, accusantium debitis rem
+                            inventore, dolorum praesentium corporis exercitationem repudiandae quis.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis impedit, tenetur
+                            quidem tempora quibusdam, molestias provident nam praesentium odio tempore ipsa saepe nihil,
+                            sit dolores necessitatibus. Dolorem voluptatem ullam nam.
+                        </p>
+                    </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      Accordion Item #2
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <span class="bs-secondary-color-subtle">SEE/THIS/</span><span
+                            class="color-petrol">CONTENT_</span>
                     </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                  </div>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ipsam tempore maxime
+                            similique? Odit eaque repellat fugit vel quaerat. Recusandae eius earum ipsa odio officiis
+                            magnam error ullam voluptates necessitatibus!
+                        </p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil minima voluptatum eligendi
+                            rem fugit. Earum tempore fugiat atque possimus, fuga, dolores consectetur praesentium libero
+                            architecto laudantium in vero facilis facere.
+                            Provident vel fugit fuga perferendis expedita eius iusto quisquam dolores, quos, aspernatur
+                            dolorum itaque accusamus maxime voluptatum obcaecati et? Numquam debitis ut quasi nihil
+                            placeat at veniam voluptatum totam vero!
+                        </p>
+                    </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                      Accordion Item #3
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <span class="bs-secondary-color-subtle">HERE/</span><span
+                            class="color-petrol">INFORMATION_</span>
                     </button>
-                  </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                  </div>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloremque est dolores
+                            nostrum velit saepe voluptatem debitis, possimus dolorem at fugiat, alias sunt voluptatibus
+                            laborum maiores, dicta illo veniam dolore?
+                            Earum nobis blanditiis quas obcaecati, tempora magnam quae mollitia hic consequatur quia,
+                            assumenda reprehenderit aperiam officiis error sit fugiat consequuntur, vel illum facere.
+                            Quis, ea dolorem ratione aliquam autem enim!
+                            Mollitia dignissimos totam aliquam enim a, quae culpa possimus vel harum repellendus
+                            consequatur odio eveniet. Nemo, fuga maxime voluptas fugiat dicta deserunt, non a officia,
+                            dignissimos recusandae ab praesentium aperiam.
+                            Minima placeat blanditiis minus inventore, maxime illo! Voluptatum voluptate fugit deleniti
+                            porro quaerat, nostrum itaque quibusdam accusantium dolore expedita amet. Culpa commodi nisi
+                            delectus ea rerum quos consequuntur exercitationem quod.
+                            Eveniet consequuntur voluptatem exercitationem, minima quam voluptate porro? Dicta illo
+                            voluptatibus sunt magnam sequi voluptates culpa, explicabo neque tenetur cumque expedita
+                            accusamus omnis, eos consequuntur atque vitae? Laborum, hic totam!
+                        </p>
+                    </div>
                 </div>
-              </div>
-        </div>    
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-        <script src="/assets/scripts/index.js" async defer></script>
-    </body>
+            </div>
+        </div>
+        <div class="row">
+            <article class="col-xxl-6 secondary-article article">
+                <h1><span class="logo-light">BE</span> <span class="headline-bold">BOLD_</span><br />
+                    <span class="logo-light">DE</span><span class="headline-bold">LIGHT_</span>
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Voluptatem quo, sapiente omnis eos animi ipsum minus voluptas laborum cum
+                    explicabo debitis ea quaerat nisi ipsa delectus. Voluptatibus animi perspiciatis placeat?
+                    Beatae nisi eligendi consequuntur enim dolorem, quod fugiat nesciunt magnam veniam! Hic aliquid
+                    suscipit facilis veritatis praesentium fugit quo inventore, labore molestiae eligendi laboriosam
+                    explicabo totam minima earum minus enim!
+                    Consequatur error provident modi. Minus tempore aut cum aliquam excepturi inventore repellat
+                    nemo
+                    sunt, rerum iure cumque nam recusandae distinctio explicabo. Voluptatum, animi perferendis
+                    tenetur
+                    commodi harum a itaque eligendi!
+                    Fuga blanditiis facere, dolore voluptatem porro laborum. Blanditiis deserunt tenetur accusamus
+                    commodi accusantium eveniet. Sit eos officia veniam amet praesentium obcaecati illo asperiores,
+                    magni esse blanditiis quod, accusamus fuga assumenda.
+                </p>
+            </article>
+            <article class="col-xxl-6 tertiary-article article">
+                <h1><span class="logo-light">BE</span> <span class="headline-bold">BOLD_</span><br />
+                    <span class="logo-light">EN</span><span class="headline-bold">JOY_</span>
+                </h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, sequi. Nulla eveniet corrupti magni
+                    sunt similique aspernatur laborum assumenda quia molestias nisi voluptas adipisci, asperiores
+                    expedita, ab veniam? Excepturi, architecto.
+                    Odit harum vel eum eos hic voluptas a fugit, dolore dolores quis eligendi, impedit accusantium fuga.
+                    Quo est, rerum quas minus sint, ducimus vero a commodi facere, itaque quidem consequatur?
+                    Tempora, praesentium nemo ratione mollitia ipsam dolorum ab, repudiandae placeat vitae facere cum
+                    tempore accusamus, maiores ut! Fuga quis dolore vero unde, deserunt labore, fugit beatae autem
+                    accusantium voluptas obcaecati!
+                    At esse placeat repellat totam iste exercitationem nemo reiciendis vero. Doloremque, quo numquam.
+                    Blanditiis ratione, cum enim, perspiciatis vitae tempora cumque voluptatibus error, vel pariatur
+                    animi numquam debitis illo molestiae.
+                    Laudantium reiciendis optio cupiditate maiores quisquam dolorem culpa ad, fuga id sequi sapiente
+                    fugiat vel voluptate adipisci mollitia earum error explicabo. Assumenda dolores eum dolor saepe
+                    debitis non incidunt beatae.
+                </p>
+            </article>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="/assets/scripts/index.js" async defer></script>
+</body>
+
 </html>
